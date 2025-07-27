@@ -4,9 +4,9 @@ title: "ABM Foundation"
 ---
 
 <head>
-  <!-- Добавляем favicon -->
   <link rel="icon" href="assets/logo.ico" type="image/x-icon">
   <link rel="icon" href="assets/logo.ico" type="image/png">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 # Добро пожаловать в ABM Foundation
