@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "ABM Wallet"
+permalink: /abm_wallet/
 ---
 
 # ABM Wallet — Ваш безопасный криптовалютный кошелек
