@@ -1,9 +1,10 @@
 title: ABM Foundation
 description: Платформа для безопасного управления криптовалютными активами и инновационной технологией Abavault.
 author: "ABM Team"
-url: "https://abm-foundation.github.io/ABM-Foundation/"
+url: "https://abmfoundation.ru/"
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 css: style.css  # Ваш кастомный стиль
+permalink: /:basename/
