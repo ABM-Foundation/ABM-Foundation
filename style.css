@@ -1,6 +1,9 @@
 /* Общие стили для всего сайта */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  h1, h2, h3, h4 
+  font-family: 'Open Sans', sans-serif;
+  
   background-image: url('https://images-assets.nasa.gov/image/iss073e0330134/iss073e0330134~medium.jpg');
   background-size: cover;
   background-position: center;
@@ -14,6 +17,7 @@ body {
   min-height: 100vh;
   background-attachment: fixed;
 }
+
 
 /* Логотип */
 header {
