@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Дорожная карта"
-permalink: /roadmap/
 ---
 
 # Дорожная карта ABM Foundation
