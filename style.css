@@ -1,110 +1,149 @@
 /* Общие стили для всего сайта */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f7fa;
-  color: #333;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://images-assets.nasa.gov/image/iss073e0330134/iss073e0330134~medium.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* Логотип */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
 
 /* Заголовки */
-h1, h2, h3, h4 {
-  color: #4CAF50;
+h1, h2, h3 {
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 2em;
   margin-bottom: 0.5em;
 }
 
 /* Параграфы */
 p {
   line-height: 1.6;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 1em;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 20px;
 }
 
 /* Ссылки */
 a {
-  color: #4CAF50;
+  color: #00ff00;
   text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Стили для блоков */
+/* Стиль для блоков */
 blockquote {
-  border-left: 5px solid #4CAF50;
+  border-left: 5px solid #00ff00;
   padding-left: 1em;
   margin-left: 0;
-  color: #555;
+  color: #ffffff;
   font-style: italic;
 }
 
-/* Стиль для кнопок */
+/* Кнопки */
 button {
-  background-color: #4CAF50;
+  background-color: #00ff00;
   color: white;
   border: none;
-  padding: 10px 15px;
-  font-size: 1em;
+  padding: 15px 25px;
+  font-size: 1.2em;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.5);
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #009900;
+  box-shadow: 0 5px 15px rgba(0, 153, 0, 0.7);
 }
 
-/* Стиль для таблиц */
+/* Таблицы */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  max-width: 900px;
 }
 
 table th, table td {
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ddd;
   text-align: left;
 }
 
 table th {
-  background-color: #f2f2f2;
+  background-color: rgba(0, 255, 0, 0.1);
   font-weight: bold;
 }
 
-/* Стили для кодов */
+table td {
+  background-color: rgba(0, 255, 0, 0.05);
+}
+
+/* Стили для кода */
 code {
   font-family: Consolas, monospace;
-  background-color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 0.2em 0.4em;
   border-radius: 3px;
+  color: #00ff00;
 }
 
 pre code {
   display: block;
   padding: 1em;
-  background-color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   white-space: pre-wrap;
   word-wrap: break-word;
+  color: #00ff00;
 }
 
-/* Стили для документации */
+/* Стили для списка */
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -113,15 +152,33 @@ ul {
 ul li {
   padding-left: 1.5em;
   position: relative;
+  font-size: 1.1em;
 }
 
 ul li::before {
   content: "•";
-  color: #4CAF50;
+  color: #00ff00;
   position: absolute;
   left: 0;
   top: 0;
   font-size: 1.5em;
+}
+
+/* Стили для формы */
+input, textarea {
+  padding: 10px;
+  border: 2px solid #00ff00;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 1em;
+  width: 300px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00cc00;
 }
 
 /* Заголовок для документации */
@@ -130,7 +187,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* Стили для боковой панели (если будет использоваться) */
+/* Боковая панель (если используется) */
 .sidebar {
   background-color: #333;
   color: white;
