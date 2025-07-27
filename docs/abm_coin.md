@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "ABM Coin"
+permalink: /abm_coin/
 ---
 
 # ABM Coin — Внутренняя криптовалюта экосистемы ABM
