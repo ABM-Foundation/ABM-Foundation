@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "ABM Liquidity"
+permalink: /abm_liquidity/
 ---
 
 # ABM Liquidity — Децентрализованная биржа для торговли криптовалютами
