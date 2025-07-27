@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Лицензия на использование технологии Abavault"
-permalink: /abavault_license/
 ---
 
 # Лицензия на использование технологии **Abavault**
