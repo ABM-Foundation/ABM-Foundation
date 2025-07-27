@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "API Abavault"
-permalink: /abavault_api/
 ---
 
 # Документация API **Abavault**
