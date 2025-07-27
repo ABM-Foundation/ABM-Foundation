@@ -33,7 +33,7 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/yourusername/ABM-Foundation.git
+git clone https://github.com/ABM-Foundation/ABM-Foundation.git
 cd ABM-Foundation
 ```
 
