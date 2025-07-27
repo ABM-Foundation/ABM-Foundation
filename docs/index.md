@@ -1,29 +1,26 @@
 ---
 layout: default
-title: Home
+title: "ABM Foundation"
 ---
 
-<link rel="stylesheet" href="style.css">
+# Добро пожаловать в ABM Foundation
 
+**ABM Foundation** — это инновационная экосистема для безопасного управления криптовалютами и цифровыми активами. Наша цель — предоставить пользователям лучшие решения для хранения, обмена и защиты криптовалют, а также предложить безопасную платформу для торговли и стейкинга.
 
+## Продукты
 
+- **ABM Wallet** — безопасный кошелек для хранения криптовалют.
+- **ABM Liquidity** — децентрализованная биржа для обмена криптовалют.
+- **Abavault** — технология для безопасного хранения активов.
 
+---
 
-# Документация ABM Foundation
+## Технология **Abavault**
 
-Добро пожаловать в документацию экосистемы ABM Foundation. Мы рады предложить вам наши передовые решения для безопасного управления криптовалютными активами.
+**Abavault** — это уникальная технология для хранения криптовалютных активов с использованием распределенного шифрования и защиты данных. Узнайте больше о технологии на [странице Abavault](abavault.md).
 
-## Продукты и технологии
-- [Abavault](products_and_technologies.md)
-- [ABM Wallet](products_and_technologies.md)
-- [ABM Liquidity](products_and_technologies.md)
-- [ABM Coin](products_and_technologies.md)
+---
 
-## Документация API
-- [API Documentation](api_documentation.md)
+## Документация и API
 
-## Руководство по установке
-- [Installation Guide](installation_guide.md)
-
-## Часто задаваемые вопросы
-- [FAQ](faq.md)
+Получите подробную информацию о технологии и API Abavault в нашей [документации](abavault_api.md).
