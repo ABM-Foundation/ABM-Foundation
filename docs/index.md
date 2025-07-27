@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "ABM Foundation"
+permalink: /index/
 ---
 
 <head>
