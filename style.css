@@ -1,9 +1,6 @@
 /* Общие стили для всего сайта */
 body {
   font-family: 'Roboto', sans-serif;
-  h1, h2, h3, h4 
-  font-family: 'Open Sans', sans-serif;
-  
   background-image: url('https://images-assets.nasa.gov/image/iss073e0330134/iss073e0330134~medium.jpg');
   background-size: cover;
   background-position: center;
@@ -16,8 +13,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-attachment: fixed;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
-
 
 /* Логотип */
 header {
@@ -25,6 +22,14 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  z-index: 1000;
+  text-align: center;
 }
 
 header img {
@@ -75,15 +80,17 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #00cc00;
 }
 
-/* Стиль для блоков */
+/* Блоки с цитатами */
 blockquote {
   border-left: 5px solid #00ff00;
   padding-left: 1em;
   margin-left: 0;
   color: #ffffff;
   font-style: italic;
+  font-size: 1.1em;
 }
 
 /* Кнопки */
@@ -96,13 +103,18 @@ button {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
-  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.5);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
 }
 
 button:hover {
   background-color: #009900;
-  box-shadow: 0 5px 15px rgba(0, 153, 0, 0.7);
+  box-shadow: 0 5px 25px rgba(0, 255, 0, 0.6);
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
 }
 
 /* Таблицы */
@@ -128,7 +140,7 @@ table td {
   background-color: rgba(0, 255, 0, 0.05);
 }
 
-/* Стили для кода */
+/* Коды и блоки с кодом */
 code {
   font-family: Consolas, monospace;
   background-color: rgba(255, 255, 255, 0.2);
@@ -168,7 +180,7 @@ ul li::before {
   font-size: 1.5em;
 }
 
-/* Стили для формы */
+/* Формы */
 input, textarea {
   padding: 10px;
   border: 2px solid #00ff00;
@@ -185,13 +197,88 @@ input:focus, textarea:focus {
   border-color: #00cc00;
 }
 
-/* Заголовок для документации */
-h1, h2 {
-  text-align: center;
-  font-weight: bold;
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
-/* Боковая панель (если используется) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Эффект параллакса */
+.parallax {
+  background-image: url('https://images-assets.nasa.gov/image/iss073e0330134/iss073e0330134~medium.jpg');
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Логотип и меню */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  z-index: 1000;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+header nav a:hover {
+  color: #00ff00;
+}
+
+/* Боковая панель */
 .sidebar {
   background-color: #333;
   color: white;
